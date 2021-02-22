@@ -4,11 +4,12 @@
 
 function solution(input) {
 
-    // logic here
+    let final;
+// logic here
 
     const userInput = clean(input); // calls the clean function
     console.log(userInput); // logs
-    const intArr = `${userInput}`.split("").map(x => Number(x)); // seperates numbers into array
+    const intArr = `${userInput}`.split("").map(x => Number(x)); // separates numbers into array
 
     let permutationsArr = permutations(intArr);
     const finalArr = [];
@@ -19,7 +20,7 @@ function solution(input) {
 
         // loops each array to make the line an array instead of each character the array
 
-        var final = ''
+        final = '';
         for (let j = 0; j < eachElement.length; j++) {
 
             eachNumber = eachElement[j];
@@ -29,10 +30,10 @@ function solution(input) {
 
         finalArr.push(parseInt(final)); // converts the array into a string
     }
-    //for (userInput.includes("0"), userInput < 3,){
-    //    final[k]="0"+finalArr[k];
-
-    //}
+    // for (userInput.includes("0"), final < 3, final++) {
+    //     final[k] = "0" + finalArr[k];
+    //
+    // }
     if (finalArr == false) {
         return 'Error! No integers.'; // returns the error if there is nothing to be permuted
     } else {
