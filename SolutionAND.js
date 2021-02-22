@@ -29,10 +29,10 @@ function solution(input) {
 
         finalArr.push(parseInt(final)); // converts the array into a string
     }
-    for (userInput.includes("0"), userInput < 3,){
-        final[k]="0"+finalArr[k];
+    //for (userInput.includes("0"), userInput < 3,){
+    //    final[k]="0"+finalArr[k];
 
-    }
+    //}
     if (finalArr == false) {
         return 'Error! No integers.'; // returns the error if there is nothing to be permuted
     } else {
